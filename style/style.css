@@ -185,6 +185,18 @@ body {
   filter: brightness(0.4) grayscale(100%);
 }
 
+.active {
+  border-bottom: solid white 2px !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:active {
+  border: none;
+}
+
 .custom-bg {
   background-color: #f0a500;
 }
@@ -204,4 +216,258 @@ body {
 .navbar .nav-link,
 .navbar .navbar-brand {
   color: white !important;
+}
+
+/* Sidebar styles */
+.sidebar {
+  color: white;
+  padding: 20px;
+  font-weight: normal;
+  height: 100vh; /* Full height sidebar */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #495057;
+}
+
+/* Main content area */
+.content {
+  font-family: "Poppins", serif;
+  color: white;
+  line-height: normal;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.content-section p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* Footer styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Box styles for visual layout */
+.box {
+  background-color: #76b852; /* Green color */
+  padding: 20px;
+  border: 1px solid #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-img-people {
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .sidebar {
+    height: auto;
+  }
+}
+
+/* List */
+.content-section ul {
+  counter-reset: index;
+}
+
+/* List element */
+.content-section li {
+  counter-increment: index;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-size: large;
+  box-sizing: border-box;
+}
+
+/* Element counter */
+.content-section li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: scroll;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Element separation */
+.content-section li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 14px;
+}
+
+.form-container {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-label {
+  color: #ddd;
+}
+
+.form-control,
+.form-check-input {
+  background-color: #444;
+  border-color: #555;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff3b2e;
+}
+
+.password-input-group {
+  position: relative;
+}
+
+.password-input-group .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  cursor: pointer;
+  color: #bbb;
+}
+
+.toggle-password:hover {
+  color: white;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.card-body {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card-title {
+  margin-bottom: 20px;
+}
+
+.card-text,
+.list-group-item {
+  font-size: 1.1rem;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff3b2e;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.icon-success {
+  width: 70px;
+  color: #28a745;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+table {
+  width: 100%;
+  max-height: 500px !important;
+  border-collapse: collapse;
+}
+
+.table-wrapper {
+  max-height: 400px; /* Batasi tinggi tabel */
+  overflow-y: auto; /* Buat tabel dapat di-scroll */
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #bbb !important;
+  color: black !important;
+  z-index: 10; /* Supaya header selalu berada di atas */
+}
+
+.table > :not(caption) > * > * {
+  background-color: #10411b;
+}
+
+td {
+  background-color: transparent;
+}
+
+tr:hover {
+  filter: brightness(1.5);
+  background-color: red !important;
 }
