@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title itemprop="name">Tribute to Linkin Park - Chester Bennington</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,17 +13,22 @@
     <link href="style/style.css" rel="stylesheet" />
   </head>
   <body class="bg-dark">
-    <nav class="navbar fixed-top bg-body navbar-expand-lg bg-transparent">
+    <nav
+      class="navbar fixed-top bg-body navbar-expand-lg bg-transparent"
+      itemscope
+      itemtype="https://schema.org/SiteNavigationElement"
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" itemprop="url">
           <img
             src="assets/images/lplogo.png"
-            alt="Linkin Park"
+            alt="Linkin Park Logo"
             width="30"
             height="30"
+            itemprop="image"
           />
         </a>
-        <a class="navbar-brand" href="#">Linkin Park</a>
+        <a class="navbar-brand" href="#" itemprop="name">Linkin Park</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,38 +58,47 @@
             style="--bs-scroll-height: 300px"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                itemprop="url"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="form.html">Registrasi</a>
+              <a class="nav-link" href="form.html" itemprop="url">Registrasi</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="tabel.html">List Lagu</a>
+              <a class="nav-link" href="tabel.html" itemprop="url">List Lagu</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Carousel -->
+
+    <!-- Carousel Section -->
     <div
       id="carouselExampleSlidesOnly"
       class="carousel slide carousel-fade"
       data-bs-ride="carousel"
       data-bs-interval="1500"
     >
-      <div class="carousel-inner h-100">
+      <div
+        class="carousel-inner h-100"
+        itemscope
+        itemtype="https://schema.org/ImageObject"
+      >
         <!-- Slide 1 -->
         <div class="carousel-item active">
           <img
             src="assets/images/chester1.jpg"
             class="banner-photo"
-            alt="..."
+            alt="Chester Bennington"
+            itemprop="contentUrl"
           />
           <div class="carousel-caption">
-            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5">
+            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5" itemprop="description">
               Tribute to Chester Bennington
             </h1>
             <h2 class="mt-5 fs-2 fs-md-4">A Fan Made For Linkin Park</h2>
@@ -96,7 +110,8 @@
           <img
             src="assets/images/chester2.jpg"
             class="banner-photo"
-            alt="..."
+            alt="Chester Bennington Tribute"
+            itemprop="contentUrl"
           />
           <div class="carousel-caption">
             <h1 class="text-lg fs-1 fs-md-3 fs-lg-5">
@@ -111,22 +126,8 @@
           <img
             src="assets/images/chester3.jpg"
             class="banner-photo"
-            alt="..."
-          />
-          <div class="carousel-caption">
-            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5">
-              Tribute to Chester Bennington
-            </h1>
-            <h2 class="mt-5 fs-2 fs-md-4">A Fan Made For Linkin Park</h2>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="carousel-item">
-          <img
-            src="assets/images/chester4.jpg"
-            class="banner-photo"
-            alt="..."
+            alt="Chester Bennington"
+            itemprop="contentUrl"
           />
           <div class="carousel-caption">
             <h1 class="text-lg fs-1 fs-md-3 fs-lg-5">
@@ -154,10 +155,16 @@
           class="col-lg-10 col-md-9 col-sm-12 content d-flex flex-column gap-3"
         >
           <div class="content-section">
-            <p class="fs-6">
-              Selamat datang di situs penggemar Linkin Park yang didedikasikan
-              khusus untuk mengenang vokalis legendaris, Chester Bennington. Di
-              sini, kita merayakan perjalanan luar biasa band ini dan
+            <p class="fs-6" itemprop="about">
+              Selamat datang di situs penggemar
+              <span itemprop="name">Linkin Park</span> yang didedikasikan khusus
+              untuk mengenang vokalis legendaris,
+              <span
+                itemprop="member"
+                itemscope
+                itemtype="https://schema.org/Person"
+                ><span itemprop="name">Chester Bennington</span></span
+              >. Di sini, kita merayakan perjalanan luar biasa band ini dan
               menghormati warisan Chester yang tak tergantikan dalam dunia
               musik. Temukan kisah di balik band ini, album mereka yang
               berpengaruh, dan lagu-lagu yang menginspirasi jutaan orang di
@@ -165,6 +172,7 @@
             </p>
           </div>
 
+          <!-- Music Section -->
           <div class="content-section">
             <h2 id="dengarkan" class="fs-2">Dengarkan lagu</h2>
             <iframe
@@ -176,312 +184,306 @@
               allowfullscreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
+              itemprop="track"
             ></iframe>
           </div>
 
+          <!-- Sejarah Section -->
           <div class="content-section">
             <h2 id="sejarah" class="fs-2">Sejarah</h2>
             <ul>
               <li>
-                <span class="dtstart" title="1996">1996</span> - Pembentukan
-                Band
+                <span itemprop="foundingDate">1996</span> - Pembentukan Band
               </li>
               <p>
-                Linkin Park dibentuk di Agoura Hills, California oleh tiga teman
-                sekolah menengah: Mike Shinoda, Brad Delson, dan Rob Bourdon.
-                Nama awal mereka adalah Xero, dan band ini kemudian merekrut Joe
-                Hahn, Dave "Phoenix" Farrell, dan Mark Wakefield sebagai vokalis
-                awal.
+                <span itemprop="name">Linkin Park</span> dibentuk di Agoura
+                Hills, California oleh tiga teman sekolah menengah: Mike
+                Shinoda, Brad Delson, dan Rob Bourdon.
               </p>
 
               <li>
-                <span class="dtstart" title="1999">1999</span> - Perubahan Nama
-                dan Bergabungnya Chester Bennington
+                1999 - Perubahan Nama dan Bergabungnya
+                <span
+                  itemprop="member"
+                  itemscope
+                  itemtype="https://schema.org/Person"
+                  ><span itemprop="name">Chester Bennington</span></span
+                >
               </li>
               <p>
                 Setelah Mark Wakefield meninggalkan band, Chester Bennington
-                dari Arizona bergabung sebagai vokalis utama pada tahun 1999,
-                menggantikan Wakefield. Band ini mengubah nama mereka menjadi
-                Linkin Park, terinspirasi dari Lincoln Park di Santa Monica,
-                California.
-              </p>
-
-              <li><span class="dtstart" title="2000">2000</span> - Album Debut "Hybrid Theory"</li>
-              <p>
-                Album debut mereka, Hybrid Theory, dirilis pada Oktober 2000 dan
-                menjadi sukses besar, dengan penjualan lebih dari 10 juta kopi
-                di Amerika Serikat. Lagu-lagu seperti In the End, Crawling, dan
-                One Step Closer membantu Linkin Park mencapai puncak
-                popularitas, dan album ini dianggap sebagai salah satu yang
-                terbaik dalam genre nu-metal.
-              </p>
-
-              <li><span class="dtstart" title="2003">2003</span> - Album Kedua "Meteora"</li>
-              <p>
-                Linkin Park merilis album kedua mereka, Meteora, pada tahun
-                2003. Album ini melanjutkan kesuksesan Hybrid Theory, dengan
-                lagu-lagu hit seperti Numb, Somewhere I Belong, dan Breaking the
-                Habit. Album ini menggabungkan elemen rock, nu-metal, dan
-                elektronik, menjadikannya salah satu album terlaris di dekade
-                2000-an.
-              </p>
-
-              <li><span class="dtstart" title="2007">2007</span> - "Minutes to Midnight" dan Evolusi Musik</li>
-              <p>
-                Pada 2007, Linkin Park merilis album ketiga mereka, Minutes to
-                Midnight, yang menandai pergeseran gaya dari nu-metal ke arah
-                rock alternatif. Lagu-lagu seperti What I've Done, Bleed It Out,
-                dan Shadow of the Day menampilkan suara yang lebih dewasa dan
-                lebih mendalam secara lirik.
+                bergabung sebagai vokalis utama.
               </p>
 
               <li>
-                <span class="dtstart" title="2010">2010</span> - Eksplorasi Gaya Musik Baru dengan "A Thousand Suns"
+                <span itemprop="albumRelease" content="2000">2000</span> - Album
+                Debut "Hybrid Theory"
               </li>
               <p>
-                Linkin Park mengeksplorasi lebih jauh elemen eksperimental dan
-                elektronik dengan album keempat mereka, A Thousand Suns. Album
-                ini berfokus pada tema sosial dan politik, dengan lagu-lagu
-                seperti The Catalyst dan Waiting for the End.
-              </p>
-
-              <li><span class="dtstart" title="2012">2012</span>  - "Living Things" dan Kombinasi Elemen Lama dan Baru</li>
-              <p>
-                Living Things, album kelima yang dirilis pada 2012, adalah upaya
-                untuk menggabungkan elemen dari gaya awal mereka dengan elemen
-                baru seperti elektronik dan pop. Lagu-lagu seperti Burn It Down
-                dan Lost in the Echo menunjukkan keberhasilan kombinasi
-                tersebut.
-              </p>
-
-              <li><span class="dtstart" title="2014">2014</span> - Kembali ke Akar Rock dengan "The Hunting Party"</li>
-              <p>
-                Pada 2014, Linkin Park kembali ke suara rock yang lebih keras
-                dengan album The Hunting Party. Album ini memiliki pendekatan
-                yang lebih mentah dan agresif dengan lagu-lagu seperti Guilty
-                All the Same dan Final Masquerade.
-              </p>
-
-              <li><span class="dtstart" title="2017">2017</span> - "One More Light" dan Kehilangan Chester Bennington</li>
-              <p>
-                Album ketujuh mereka, One More Light, dirilis pada Mei 2017 dan
-                menampilkan suara yang lebih pop dan introspektif. Beberapa
-                bulan setelah perilisan album, pada 20 Juli 2017, Chester
-                Bennington meninggal dunia karena bunuh diri. Kepergiannya
-                mengejutkan dunia musik dan jutaan penggemar di seluruh dunia.
-              </p>
-
-              <li><span class="dtstart" title="Pasca-2017">Pasca-2017</span> - Mengenang Chester dan Masa Depan Linkin Park</li>
-              <p>
-                Setelah kepergian Chester, band ini belum merilis album baru,
-                tetapi anggota band, terutama Mike Shinoda, telah aktif dalam
-                proyek solo dan berbagai penghargaan untuk Chester. Linkin Park
-                terus merayakan warisan mereka melalui penggemar di seluruh
-                dunia dan mengenang kontribusi besar Chester Bennington terhadap
-                musik dan kehidupan banyak orang.
+                Album debut mereka, <span itemprop="name">Hybrid Theory</span>,
+                dirilis pada 2000 dan menjadi sangat sukses.
               </p>
             </ul>
           </div>
 
+          <!-- Album Section -->
           <div class="content-section">
             <h2 id="album" class="fs-2">Album</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               <!-- Card 1: Hybrid Theory -->
-              <div class="col">
+              <div
+                class="col"
+                itemscope
+                itemtype="https://schema.org/MusicAlbum"
+              >
                 <div class="card h-100">
                   <img
                     src="assets/images/hybridtheory.jpeg"
                     class="card-img-top"
                     alt="Hybrid Theory"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Hybrid Theory</h5>
-                    <p class="card-text">Tahun: 2000</p>
+                    <h5 class="card-title" itemprop="name">Hybrid Theory</h5>
+                    <p class="card-text">
+                      Tahun: <span itemprop="datePublished">2000</span>
+                    </p>
                   </div>
                 </div>
               </div>
 
               <!-- Card 2: Meteora -->
-              <div class="col">
+              <div
+                class="col"
+                itemscope
+                itemtype="https://schema.org/MusicAlbum"
+              >
                 <div class="card h-100">
                   <img
                     src="assets/images/meteora.jpg"
                     class="card-img-top"
                     alt="Meteora"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Meteora</h5>
-                    <p class="card-text">Tahun: 2003</p>
+                    <h5 class="card-title" itemprop="name">Meteora</h5>
+                    <p class="card-text">
+                      Tahun: <span itemprop="datePublished">2003</span>
+                    </p>
                   </div>
                 </div>
               </div>
 
               <!-- Card 3: Minutes to Midnight -->
-              <div class="col">
+              <div
+                class="col"
+                itemscope
+                itemtype="https://schema.org/MusicAlbum"
+              >
                 <div class="card h-100">
                   <img
                     src="assets/images/minutestomidnight.jpg"
                     class="card-img-top"
                     alt="Minutes to Midnight"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Minutes to Midnight</h5>
-                    <p class="card-text">Tahun: 2007</p>
+                    <h5 class="card-title" itemprop="name">
+                      Minutes to Midnight
+                    </h5>
+                    <p class="card-text">
+                      Tahun: <span itemprop="datePublished">2007</span>
+                    </p>
                   </div>
                 </div>
               </div>
 
               <!-- Card 4: A Thousand Suns -->
-              <div class="col">
+              <div
+                class="col"
+                itemscope
+                itemtype="https://schema.org/MusicAlbum"
+              >
                 <div class="card h-100">
                   <img
                     src="assets/images/athousandsuns.jpg"
                     class="card-img-top"
                     alt="A Thousand Suns"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">A Thousand Suns</h5>
-                    <p class="card-text">Tahun: 2010</p>
+                    <h5 class="card-title" itemprop="name">A Thousand Suns</h5>
+                    <p class="card-text">
+                      Tahun: <span itemprop="datePublished">2010</span>
+                    </p>
                   </div>
                 </div>
               </div>
 
               <!-- Card 5: Living Things -->
-              <div class="col">
+              <div
+                class="col"
+                itemscope
+                itemtype="https://schema.org/MusicAlbum"
+              >
                 <div class="card h-100">
                   <img
                     src="assets/images/livingthings.jpg"
                     class="card-img-top"
                     alt="Living Things"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Living Things</h5>
-                    <p class="card-text">Tahun: 2012</p>
+                    <h5 class="card-title" itemprop="name">Living Things</h5>
+                    <p class="card-text">
+                      Tahun: <span itemprop="datePublished">2012</span>
+                    </p>
                   </div>
                 </div>
               </div>
 
               <!-- Card 6: The Hunting Party -->
-              <div class="col">
+              <div
+                class="col"
+                itemscope
+                itemtype="https://schema.org/MusicAlbum"
+              >
                 <div class="card h-100">
                   <img
                     src="assets/images/thehuntingparty.jpg"
                     class="card-img-top"
                     alt="The Hunting Party"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">The Hunting Party</h5>
-                    <p class="card-text">Tahun: 2014</p>
+                    <h5 class="card-title" itemprop="name">
+                      The Hunting Party
+                    </h5>
+                    <p class="card-text">
+                      Tahun: <span itemprop="datePublished">2014</span>
+                    </p>
                   </div>
                 </div>
               </div>
 
               <!-- Card 7: One More Light -->
-              <div class="col">
+              <div
+                class="col"
+                itemscope
+                itemtype="https://schema.org/MusicAlbum"
+              >
                 <div class="card h-100">
                   <img
                     src="assets/images/onemorelight.jpeg"
                     class="card-img-top"
                     alt="One More Light"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">One More Light</h5>
-                    <p class="card-text">Tahun: 2017</p>
+                    <h5 class="card-title" itemprop="name">One More Light</h5>
+                    <p class="card-text">
+                      Tahun: <span itemprop="datePublished">2017</span>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Anggota Band Section -->
           <div class="content-section">
             <h2 id="anggota" class="fs-2">Anggota Band</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-              <!-- Card 1: Chester Bennington -->
-              <div class="col">
-                <div class="card h-100 border-3 border-3">
+              <!-- Anggota 1 -->
+              <div class="col" itemscope itemtype="https://schema.org/Person">
+                <div class="card h-100">
                   <img
                     src="assets/images/chester.webp"
                     class="card-img-people"
                     alt="Chester Bennington"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Chester Bennington</h5>
-                    <p class="card-text">Tahun: 2000</p>
+                    <h5 class="card-title" itemprop="name">
+                      Chester Bennington
+                    </h5>
                   </div>
                 </div>
               </div>
 
-              <!-- Card 2: Mike Shinoda -->
-              <div class="col">
-                <div class="card h-100 border-3">
+              <!-- Anggota 2 -->
+              <div class="col" itemscope itemtype="https://schema.org/Person">
+                <div class="card h-100">
                   <img
                     src="assets/images/mikeshinoda.webp"
                     class="card-img-people"
                     alt="Mike Shinoda"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Mike Shinoda</h5>
-                    <p class="card-text">Tahun: 2003</p>
+                    <h5 class="card-title" itemprop="name">Mike Shinoda</h5>
                   </div>
                 </div>
               </div>
 
-              <!-- Card 3: Brad Delson -->
-              <div class="col">
-                <div class="card h-100 border-3">
+              <!-- Anggota 3: Brad Delson -->
+              <div class="col" itemscope itemtype="https://schema.org/Person">
+                <div class="card h-100">
                   <img
                     src="assets/images/braddelson.jpg"
                     class="card-img-people"
                     alt="Brad Delson"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Brad Delson</h5>
-                    <p class="card-text">Tahun: 2007</p>
+                    <h5 class="card-title" itemprop="name">Brad Delson</h5>
                   </div>
                 </div>
               </div>
 
-              <!-- Card 4: Rob Bourdon -->
-              <div class="col">
-                <div class="card h-100 border-3">
+              <!-- Anggota 4: Rob Bourdon -->
+              <div class="col" itemscope itemtype="https://schema.org/Person">
+                <div class="card h-100">
                   <img
                     src="assets/images/bourdon.png"
                     class="card-img-people"
                     alt="Rob Bourdon"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Rob Bourdon</h5>
-                    <p class="card-text">Tahun: 2010</p>
+                    <h5 class="card-title" itemprop="name">Rob Bourdon</h5>
                   </div>
                 </div>
               </div>
 
-              <!-- Card 5: Dave "Phoenix" Farrell -->
-              <div class="col">
-                <div class="card h-100 border-3">
+              <!-- Anggota 5: Dave "Phoenix" Farrell -->
+              <div class="col" itemscope itemtype="https://schema.org/Person">
+                <div class="card h-100">
                   <img
                     src="assets/images/dave.jpg"
                     class="card-img-people"
-                    alt='Dave "Phoenix" Farrell'
+                    alt="Dave 'Phoenix' Farrell"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Dave "Phoenix" Farrell</h5>
-                    <p class="card-text">Tahun: 2012</p>
+                    <h5 class="card-title" itemprop="name">
+                      Dave "Phoenix" Farrell
+                    </h5>
                   </div>
                 </div>
               </div>
 
-              <!-- Card 6: Joe Hahn -->
-              <div class="col">
-                <div class="card h-100 border-3">
+              <!-- Anggota 6: Joe Hahn -->
+              <div class="col" itemscope itemtype="https://schema.org/Person">
+                <div class="card h-100">
                   <img
                     src="assets/images/joehan.jpg"
                     class="card-img-people"
                     alt="Joe Hahn"
+                    itemprop="image"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Joe Hahn</h5>
-                    <p class="card-text">Tahun: 2014</p>
+                    <h5 class="card-title" itemprop="name">Joe Hahn</h5>
                   </div>
                 </div>
               </div>
@@ -492,8 +494,8 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-      <p>©2024 Ujian Tengah Semester - Cornelius Linux - 122140079</p>
+    <footer itemscope itemtype="https://schema.org/WPFooter">
+      <p>&copy;2024 Ujian Tengah Semester - Cornelius Linux - 122140079</p>
     </footer>
 
     <script
@@ -503,7 +505,7 @@
     ></script>
 
     <script>
-      // Fungsi untuk menambahkan kelas 'scrolled' saat pengguna menggulir halaman
+      // Menambahkan kelas 'scrolled' ke navbar saat scroll
       window.addEventListener("scroll", function () {
         var navbar = document.querySelector(".navbar");
         if (window.scrollY > 50) {

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>List Lagu Linkin Park</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,9 +21,10 @@
             alt="Linkin Park"
             width="30"
             height="30"
+            itemprop="image"
           />
         </a>
-        <a class="navbar-brand" href="#">Linkin Park</a>
+        <a class="navbar-brand" href="#" itemprop="name">Linkin Park</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -79,12 +80,15 @@
             src="assets/images/chester1.jpg"
             class="banner-photo"
             alt="..."
+            itemprop="image"
           />
           <div class="carousel-caption">
-            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5">
+            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5" itemprop="headline">
               Tribute to Chester Bennington
             </h1>
-            <h2 class="mt-5 fs-2 fs-md-4">A Fan Made For Linkin Park</h2>
+            <h2 class="mt-5 fs-2 fs-md-4" itemprop="description">
+              A Fan Made For Linkin Park
+            </h2>
           </div>
         </div>
 
@@ -94,42 +98,15 @@
             src="assets/images/chester2.jpg"
             class="banner-photo"
             alt="..."
+            itemprop="image"
           />
           <div class="carousel-caption">
-            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5">
+            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5" itemprop="headline">
               Tribute to Chester Bennington
             </h1>
-            <h2 class="mt-5 fs-2 fs-md-4">A Fan Made For Linkin Park</h2>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <img
-            src="assets/images/chester3.jpg"
-            class="banner-photo"
-            alt="..."
-          />
-          <div class="carousel-caption">
-            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5">
-              Tribute to Chester Bennington
-            </h1>
-            <h2 class="mt-5 fs-2 fs-md-4">A Fan Made For Linkin Park</h2>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="carousel-item">
-          <img
-            src="assets/images/chester4.jpg"
-            class="banner-photo"
-            alt="..."
-          />
-          <div class="carousel-caption">
-            <h1 class="text-lg fs-1 fs-md-3 fs-lg-5">
-              Tribute to Chester Bennington
-            </h1>
-            <h2 class="mt-5 fs-2 fs-md-4">A Fan Made For Linkin Park</h2>
+            <h2 class="mt-5 fs-2 fs-md-4" itemprop="description">
+              A Fan Made For Linkin Park
+            </h2>
           </div>
         </div>
       </div>
@@ -152,6 +129,8 @@
             <table
               id="song-table"
               class="table table-striped table-dark mt-4 fs-6"
+              itemscope
+              itemtype="https://schema.org/MusicPlaylist"
             >
               <thead>
                 <tr>
@@ -162,359 +141,949 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>1</td>
-                  <td>In the End</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">In the End</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>2</td>
-                  <td>One Step Closer</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">One Step Closer</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>3</td>
-                  <td>Crawling</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">Crawling</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>4</td>
-                  <td>Runaway</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">Runaway</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>5</td>
-                  <td>With You</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">With You</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>6</td>
-                  <td>Points of Authority</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">Points of Authority</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>7</td>
-                  <td>Papercut</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">Papercut</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>8</td>
-                  <td>Pushing Me Away</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">Pushing Me Away</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>9</td>
-                  <td>By Myself</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">By Myself</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>10</td>
-                  <td>Forgotten</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">Forgotten</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>11</td>
-                  <td>A Place for My Head</td>
-                  <td>2000</td>
-                  <td>Hybrid Theory</td>
+                  <td itemprop="name">A Place for My Head</td>
+                  <td itemprop="datePublished">2000</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Hybrid Theory</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>12</td>
-                  <td>Numb</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Numb</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>13</td>
-                  <td>Somewhere I Belong</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Somewhere I Belong</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>14</td>
-                  <td>Faint</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Faint</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>15</td>
-                  <td>Breaking the Habit</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Breaking the Habit</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>16</td>
-                  <td>From the Inside</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">From the Inside</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>17</td>
-                  <td>Lying from You</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Lying from You</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>18</td>
-                  <td>Easier to Run</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Easier to Run</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>19</td>
-                  <td>Hit the Floor</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Hit the Floor</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>20</td>
-                  <td>Figure.09</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Figure.09</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>21</td>
-                  <td>Session</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Session</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>22</td>
-                  <td>Nobody's Listening</td>
-                  <td>2003</td>
-                  <td>Meteora</td>
+                  <td itemprop="name">Nobody's Listening</td>
+                  <td itemprop="datePublished">2003</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Meteora</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>23</td>
-                  <td>What I've Done</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">What I've Done</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>24</td>
-                  <td>Bleed It Out</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">Bleed It Out</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>25</td>
-                  <td>Shadow of the Day</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">Shadow of the Day</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>26</td>
-                  <td>Leave Out All the Rest</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">Leave Out All the Rest</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>27</td>
-                  <td>Given Up</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">Given Up</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>28</td>
-                  <td>No More Sorrow</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">No More Sorrow</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>29</td>
-                  <td>Valentine's Day</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">Valentine's Day</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>30</td>
-                  <td>The Little Things Give You Away</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">The Little Things Give You Away</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>31</td>
-                  <td>In Between</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">In Between</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>32</td>
-                  <td>Hands Held High</td>
-                  <td>2007</td>
-                  <td>Minutes to Midnight</td>
+                  <td itemprop="name">Hands Held High</td>
+                  <td itemprop="datePublished">2007</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Minutes to Midnight</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>33</td>
-                  <td>The Catalyst</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">The Catalyst</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>34</td>
-                  <td>Waiting for the End</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">Waiting for the End</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>35</td>
-                  <td>Burning in the Skies</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">Burning in the Skies</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>36</td>
-                  <td>Robot Boy</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">Robot Boy</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>37</td>
-                  <td>Blackout</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">Blackout</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>38</td>
-                  <td>Wretches and Kings</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">Wretches and Kings</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>39</td>
-                  <td>Iridescent</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">Iridescent</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>40</td>
-                  <td>The Requiem</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">The Requiem</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>41</td>
-                  <td>The Radiance</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">The Radiance</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>42</td>
-                  <td>Jornada Del Muerto</td>
-                  <td>2010</td>
-                  <td>A Thousand Suns</td>
+                  <td itemprop="name">Jornada Del Muerto</td>
+                  <td itemprop="datePublished">2010</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">A Thousand Suns</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>43</td>
-                  <td>Burn It Down</td>
-                  <td>2012</td>
-                  <td>Living Things</td>
+                  <td itemprop="name">Burn It Down</td>
+                  <td itemprop="datePublished">2012</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Living Things</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>44</td>
-                  <td>Lost in the Echo</td>
-                  <td>2012</td>
-                  <td>Living Things</td>
+                  <td itemprop="name">Lost in the Echo</td>
+                  <td itemprop="datePublished">2012</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Living Things</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>45</td>
-                  <td>Castle of Glass</td>
-                  <td>2012</td>
-                  <td>Living Things</td>
+                  <td itemprop="name">Castle of Glass</td>
+                  <td itemprop="datePublished">2012</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Living Things</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>46</td>
-                  <td>Powerless</td>
-                  <td>2012</td>
-                  <td>Living Things</td>
+                  <td itemprop="name">Powerless</td>
+                  <td itemprop="datePublished">2012</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Living Things</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>47</td>
-                  <td>Roads Untraveled</td>
-                  <td>2012</td>
-                  <td>Living Things</td>
+                  <td itemprop="name">Roads Untraveled</td>
+                  <td itemprop="datePublished">2012</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">Living Things</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>48</td>
-                  <td>Guilty All the Same</td>
-                  <td>2014</td>
-                  <td>The Hunting Party</td>
+                  <td itemprop="name">Guilty All the Same</td>
+                  <td itemprop="datePublished">2014</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">The Hunting Party</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>49</td>
-                  <td>Until It's Gone</td>
-                  <td>2014</td>
-                  <td>The Hunting Party</td>
+                  <td itemprop="name">Until It's Gone</td>
+                  <td itemprop="datePublished">2014</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">The Hunting Party</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>50</td>
-                  <td>Wastelands</td>
-                  <td>2014</td>
-                  <td>The Hunting Party</td>
+                  <td itemprop="name">Wastelands</td>
+                  <td itemprop="datePublished">2014</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">The Hunting Party</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>51</td>
-                  <td>Final Masquerade</td>
-                  <td>2014</td>
-                  <td>The Hunting Party</td>
+                  <td itemprop="name">Final Masquerade</td>
+                  <td itemprop="datePublished">2014</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">The Hunting Party</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>52</td>
-                  <td>Rebellion</td>
-                  <td>2014</td>
-                  <td>The Hunting Party</td>
+                  <td itemprop="name">Rebellion</td>
+                  <td itemprop="datePublished">2014</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">The Hunting Party</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>53</td>
-                  <td>All for Nothing</td>
-                  <td>2014</td>
-                  <td>The Hunting Party</td>
+                  <td itemprop="name">All for Nothing</td>
+                  <td itemprop="datePublished">2014</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">The Hunting Party</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>54</td>
-                  <td>One More Light</td>
-                  <td>2017</td>
-                  <td>One More Light</td>
+                  <td itemprop="name">One More Light</td>
+                  <td itemprop="datePublished">2017</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">One More Light</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>55</td>
-                  <td>Heavy</td>
-                  <td>2017</td>
-                  <td>One More Light</td>
+                  <td itemprop="name">Heavy</td>
+                  <td itemprop="datePublished">2017</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">One More Light</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>56</td>
-                  <td>Talking to Myself</td>
-                  <td>2017</td>
-                  <td>One More Light</td>
+                  <td itemprop="name">Talking to Myself</td>
+                  <td itemprop="datePublished">2017</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">One More Light</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>57</td>
-                  <td>Good Goodbye</td>
-                  <td>2017</td>
-                  <td>One More Light</td>
+                  <td itemprop="name">Good Goodbye</td>
+                  <td itemprop="datePublished">2017</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">One More Light</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>58</td>
-                  <td>Battle Symphony</td>
-                  <td>2017</td>
-                  <td>One More Light</td>
+                  <td itemprop="name">Battle Symphony</td>
+                  <td itemprop="datePublished">2017</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">One More Light</span>
+                  </td>
                 </tr>
-                <tr>
+                <tr
+                  itemscope
+                  itemprop="track"
+                  itemtype="https://schema.org/MusicRecording"
+                >
                   <td>59</td>
-                  <td>Sharp Edges</td>
-                  <td>2017</td>
-                  <td>One More Light</td>
+                  <td itemprop="name">Sharp Edges</td>
+                  <td itemprop="datePublished">2017</td>
+                  <td
+                    itemprop="inAlbum"
+                    itemscope
+                    itemtype="https://schema.org/MusicAlbum"
+                  >
+                    <span itemprop="name">One More Light</span>
+                  </td>
                 </tr>
               </tbody>
             </table>
